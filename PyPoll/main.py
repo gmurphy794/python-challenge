@@ -52,8 +52,15 @@ with open(csvpath, newline='') as csvfile:
     print("----------------------------")
     print("Winner: " + str(sorted_d[0][0]))
     
-    
-    
+    file.write("Election Results" + "\n")
+    file.write("----------------------------" + "\n")
+    file.write("Total Votes: " + str(len(candidates2)) + "\n")
+    file.write("----------------------------" + '\n')
+    for i in range(len(candidates)):
+        file.write(str(sorted_d[i][0]) + ": " 
+              + str(candidateVotesP[i]) + ".000% " + "(" + str(sorted_d[i][1]) + ")" + '\n')
+    file.write("----------------------------" + '\n')
+    file.write("Winner: " + str(sorted_d[0][0]))    
     
     
     
