@@ -12,7 +12,6 @@ with open(csvpath, newline='') as csvfile:
     candidates2 = []
     candidateVotes=[]
     candidateVotesP = []
-    candidateVotesPS = []
     
     
     for row in csvreader:
